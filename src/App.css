@@ -1,38 +1,164 @@
-.App {
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f7fa;
+  padding: 20px;
+}
+
+h1 {
   text-align: center;
+  color: #333;
+  margin-bottom: 20px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+input[type="text"],
+input[type="date"] {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #4caf50;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 10px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+button:hover {
+  background-color: #45a049;
+}
+
+ul {
+  list-style-type: none;
+  margin-top: 20px;
+}
+
+li {
+  background-color: #fff;
+  padding: 15px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+li h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+li p {
+  font-size: 14px;
+  color: #666;
+}
+
+li p:nth-child(3) {
+  font-weight: bold;
+}
+
+button {
+  padding: 8px 16px;
+  font-size: 14px;
+  cursor: pointer;
+  background-color: #f44336;
+  border: none;
+  color: white;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+button:focus {
+  outline: none;
+}
+
+button:hover {
+  background-color: #e53935;
+}
+
+button.complete {
+  background-color: #ffa500;
+}
+
+button.complete:hover {
+  background-color: #ff8c00;
+}
+
+button.delete {
+  background-color: #f44336;
+}
+
+button.delete:hover {
+  background-color: #e53935;
+}
+
+/* Styling for the TodoApp */
+.todo-form {
+  margin-bottom: 20px;
+}
+
+.todo-buttons {
+  margin-top: 10px;
+}
+
+.action-button {
+  margin: 5px;
+  padding: 10px;
+  font-size: 14px;
+}
+
+.cancel-button {
+  background-color: #f44336;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.delete-button {
+  background-color: #f44336;
+  color: white;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.todo-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.todo-item {
+  padding: 10px;
+  border: 1px solid #ccc;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+}
+
+.todo-actions {
+  margin-top: 10px;
+}
+
+h1 {
+  text-align: center;
+}
+
+input[type="text"],
+input[type="date"] {
+  padding: 10px;
+  margin-bottom: 10px;
+  width: 100%;
+  max-width: 400px;
+}
+
+input[type="radio"] {
+  margin-left: 10px;
 }
